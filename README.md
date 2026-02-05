@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Tic - Tac - Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Классическая игра крестики - нолики на React. Позволяет двум игрокам поочередно ставить крестики (X) и нолики (O) на поле 3×3. 
+Игра определяет победителя или объявляет ничью.
 
-## Available Scripts
+## Особенности
 
-In the project directory, you can run:
+- **Игровое поле 3×3: интерактивные ячейки для ходов**
+- **Определение победителя: автоматическая проверка выигрышных комбинаций**
+- **Статус игры: отображение текущего игрока и победителя**
+- **Новая игра: кнопка для сброса и начала заново**
 
-### `npm start`
+## Быстрый старт
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Предварительные требования
+- **Node.js (версия 16 или выше)**
+- **npm или yarn**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Установка и запуск
 
-### `npm test`
+1. **Клонируйте репозиторий**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone https://github.com/vulkan790/tic-tac-toe.git
+cd tic-tac-toe
+```
 
-### `npm run build`
+2. **Установите зависимости**
+```sh
+npm install
+```
+3. **Запустите в режиме разработки**
+```sh
+npm run dev
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Откройте в браузере**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Сборка для production**
+```sh
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Используемые технологии
 
-### `npm run eject`
+- **Frontend:** React + JavaScript
+- **Базовая вёрстка:** HTML/CSS
+- **Сборка:** React-scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Цель игры
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Первым выстроить в ряд 3 своих символа по горизонтали, вертикали или диагонали на игровом поле 3×3.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Как играть:
+1. **Игроки по очереди нажимают на свободные ячейки**
+2. **Первый игрок ставит «X», второй — «O»**
+3. **Игра заканчивается, когда: Один из игроков соберёт линию из 3 своих символов (вертикаль, горизонталь, диагональ) или все ячейки заполнены (ничья)**
+4. **Нажмите «Новая игра», чтобы начать заново**
