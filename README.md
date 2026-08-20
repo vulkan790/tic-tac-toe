@@ -31,19 +31,19 @@ npm install
 ```
 3. **Запустите в режиме разработки**
 ```sh
-npm run dev
+npm start
 ```
 
 4. **Откройте в браузере**
 
 5. **Сборка для production**
 ```sh
-npm run build
+npm build
 ```
 
 ## Используемые технологии
 
-- **Frontend:** React + JavaScript
+- **Frontend:** React + TypeScript
 - **Базовая вёрстка:** HTML/CSS
 - **Сборка:** React-scripts
 
@@ -72,7 +72,7 @@ A classic Tic - Tac - Toe game built with React. It lets two players take turns 
 
 ### Prerequisites
 - **Node.js (version 16 or higher)**
-- **npm или yarn**
+- **npm or yarn**
 
 ### Installation and Running
 
@@ -89,19 +89,19 @@ npm install
 ```
 3. **Run in development mode**
 ```sh
-npm run dev
+npm start
 ```
 
 4. **Open in your browser**
 
 5. **Build for production**
 ```sh
-npm run build
+npm build
 ```
 
 ## Technologies Used
 
-- **Frontend:** React + ОфмфScript
+- **Frontend:** React + TypeScript
 - **Basic Layout:** HTML/CSS
 - **Build tool:** React-scripts
 

@@ -1,15 +1,18 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import BoardComponent from './components/BoardComponent'
 import StatusComponent from './components/StatusComponent'
+import { CeilValue } from './types/types'
 import './App.css'
+
+type Winner = CeilValue | "draw" | null
 
 function App() 
 {
-    const [board, setBoard] = useState(Array(9).fill(null))
-    const [isXNext, setIsXNext] = useState(true)
-    const [winner, setWinner] = useState(null)
+    const [board, setBoard] = useState<CeilValue[]>(Array(9).fill(null))
+    const [isXNext, setIsXNext] = useState<boolean>(true)
+    const [winner, setWinner] = useState<Winner>(null)
 
-    function calculateWinner(board)
+    function calculateWinner(board: CeilValue[]): Winner
     {
         const lines = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -28,7 +31,7 @@ function App()
         return null;
     }
 
-    const handleCellClick = (index) => {
+    const handleCellClick = (index: number) => {
         if (board[index] || winner)
             return
         

@@ -1,6 +1,8 @@
+import React from 'react'
+import { BoardProps } from "../types/types"
 import CellComponent from "./CellComponent"
 
-function BoardComponent({ board, onCellClick })
+function BoardComponent({ board, onCellClick }: BoardProps)
 {
     return (
         <div className="board">

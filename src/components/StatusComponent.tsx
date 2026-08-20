@@ -1,4 +1,7 @@
-function StatusComponent({ winner, isXNext })
+import React from 'react'
+import { StatusProps } from "../types/types"
+
+function StatusComponent({ winner, isXNext }: StatusProps)
 {
     if (winner)
     {
